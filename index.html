@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finuity — Know what's truly yours to spend</title>
+<meta name="description" content="Finuity is a personal finance coach for Filipino students. Track baon, bills and utang, then learn better money habits in short lessons. Built by PCP-IS Solutions, DNSC.">
+<meta name="theme-color" content="#0a0a0c">
+<meta property="og:title" content="Finuity — Know what's truly yours to spend">
+<meta property="og:description" content="A personal finance coach for Filipino students. Bills first, habits next.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+<link rel="icon" type="image/png" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+
+<!-- Fonts load from Google Fonts when online; the system fallbacks in css/styles.css keep the page readable offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..800,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Finuity home">
+      <span class="brand-tile"><img src="assets/logo.png" alt="" width="40" height="40"></span>
+      <span class="brand-word">FIN<b>UITY</b></span>
+    </a>
+
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#home" data-spy="home">Home</a>
+      <a href="#about" data-spy="about">About</a>
+      <a href="#products" data-spy="products">Products</a>
+      <a href="#video" data-spy="video">Video</a>
+      <a href="#contact" data-spy="contact">Contact</a>
+      <a class="btn btn-primary nav-cta" href="#contact" data-app-link>Try the app</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1. HOME ========== -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> PCP-IS Solutions · SUNDAYAG 2026</p>
+      <h1 id="hero-title">Know what’s <em>truly yours</em> to&nbsp;spend.</h1>
+      <p class="lede">
+        <strong>Finuity</strong> is a personal finance coach for Filipino students.
+        Put your baon, bills and utang in one place, see what’s really left after bills,
+        and pick up better money habits in short lessons — one small log a day.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="#contact" data-app-link>Try Finuity free
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#video">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg>
+          Watch the 60-second video
+        </a>
+      </div>
+
+      <ul class="hero-facts" aria-label="Quick facts">
+        <li><b>₱0</b><span>to start</span></li>
+        <li><b>1 tap</b><span>to log repeat buys</span></li>
+        <li><b>No app store</b><span>install from your browser</span></li>
+      </ul>
+    </div>
+
+    <!-- A *peek* of the app, not a screenshot: the rest is inside the app. -->
+    <div class="hero-visual" aria-hidden="false">
+      <div class="peek" role="img" aria-label="A small preview card from the Finuity app showing the amount left to spend after bills">
+        <div class="peek-top">
+          <span>Good morning</span>
+          <span class="peek-flame"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg>10</span>
+        </div>
+        <div class="peek-card">
+          <p class="peek-label">Yours to spend in November, after bills</p>
+          <p class="peek-amount"><span class="peso">₱</span><span id="peekCount" data-to="2480">2,480</span><span class="cents">.00</span></p>
+          <div class="peek-split">
+            <div><i class="d1"></i>Income<b>₱5,200</b></div>
+            <div><i class="d2"></i>Spent<b>₱1,370</b></div>
+          </div>
+          <div class="peek-bar"><span></span></div>
+        </div>
+        <div class="peek-ghost">
+          <div></div><div></div>
+        </div>
+        <div class="peek-lock">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <p>Bills, utang, goals and lessons<br>are waiting inside.</p>
+          <a class="btn btn-small" href="#contact" data-app-link>Open the app</a>
+        </div>
+      </div>
+
+      <button class="fin" id="fin" type="button" aria-label="Fin the coin mascot. Click for a money tip.">
+        <span class="fin-bubble" id="finBubble" role="status" aria-live="polite">Hi, I’m Fin! Tap me for a tip.</span>
+        <span class="fin-sprite">
+          <img src="assets/fin.svg" alt="" width="160" height="160">
+          <img class="blink" src="assets/fin-blink.svg" alt="" width="160" height="160">
+        </span>
+      </button>
+      <p class="peek-note">Sample numbers for illustration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Filipino money words -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>baon</span><span>ipon</span><span>utang</span><span>allowance</span><span>sweldo</span><span>alkansya</span><span>load</span><span>pamasahe</span><span>budget</span>
+    <span>baon</span><span>ipon</span><span>utang</span><span>allowance</span><span>sweldo</span><span>alkansya</span><span>load</span><span>pamasahe</span><span>budget</span>
+    <span>baon</span><span>ipon</span><span>utang</span><span>allowance</span><span>sweldo</span><span>alkansya</span><span>load</span><span>pamasahe</span><span>budget</span>
+    <span>baon</span><span>ipon</span><span>utang</span><span>allowance</span><span>sweldo</span><span>alkansya</span><span>load</span><span>pamasahe</span><span>budget</span>
+  </div>
+</div>
+
+<!-- ========== 2. ABOUT US ========== -->
+<section class="section paper" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-head reveal">
+        <p class="eyebrow dark">About us</p>
+        <h2 id="about-title">Built by students who got tired of asking, “Where did it all go?”</h2>
+      </div>
+
+      <div class="about-body reveal">
+        <p>
+          We are <strong>PCP-IS Solutions</strong>, a student team from the Institute of Computing at
+          Davao del Norte State College. Our motto is simple: <em>creating solutions for IS-related problems.</em>
+        </p>
+        <p>
+          Finuity started with a problem we all knew. Allowance is gone by Thursday, the small buys
+          (lunch, fare, load) add up, and utang gets forgotten. Nobody teaches us to plan money, and most
+          budgeting apps feel made for people who already have the habit.
+        </p>
+        <p>
+          So we built the coach we wished we had. Finuity is <strong>not</strong> a bank or an e-wallet.
+          You record your own money, which is exactly what makes you notice it, and short lessons
+          teach you financial management along the way. It began as our entry concept for the
+          Philippine Startup Challenge XI and is now a working app.
+        </p>
+      </div>
+    </div>
+
+    <div class="mv">
+      <article class="mv-card reveal">
+        <span class="mv-no">Mission</span>
+        <p>To help Filipino students understand their money by making it simple to track, plan and learn, one small daily habit at a time.</p>
+      </article>
+      <article class="mv-card mv-vision reveal">
+        <span class="mv-no">Vision</span>
+        <p>A generation of Filipino students who graduate with calm, confident money habits, and who know what is truly theirs to spend.</p>
+      </article>
+    </div>
+
+    <ol class="principles">
+      <li class="reveal"><b>Bills first.</b> Show the number that matters: what is left after the things you must pay.</li>
+      <li class="reveal"><b>Habits over lectures.</b> Three-minute lessons and a daily streak beat a ten-page guide nobody reads.</li>
+      <li class="reveal"><b>Your money, your call.</b> You enter your own data, and you can hide the numbers whenever someone is looking.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== 3. PRODUCTS / SERVICES ========== -->
+<section class="section" id="products" aria-labelledby="prod-title">
+  <div class="wrap">
+    <div class="prod-head reveal">
+      <p class="eyebrow">Products &amp; services</p>
+      <h2 id="prod-title">One app. Six ways it helps you keep more of your&nbsp;money.</h2>
+      <p class="sub">Finuity runs in your phone’s browser and installs like an app. Here is what you get. The best part, seeing your own numbers, happens inside.</p>
+    </div>
+
+    <ol class="features">
+      <li class="feat reveal">
+        <span class="feat-no">01</span>
+        <div>
+          <h3>Bills-first budgeting</h3>
+          <p>Add your bills and income and Finuity shows what is <em>truly yours</em> to spend this month, after bills. No more guessing from your wallet balance.</p>
+          <span class="tags"><i>Monthly budget limit</i><i>Bill reminders</i></span>
+        </div>
+      </li>
+      <li class="feat reveal">
+        <span class="feat-no">02</span>
+        <div>
+          <h3>Log in seconds</h3>
+          <p>One-tap repeat for the things you buy every day, like lunch, fare and water. Snap a receipt to scan it. Three scans are free.</p>
+          <span class="tags"><i>One-tap repeat</i><i>Receipt scan</i><i>Spending by category</i></span>
+        </div>
+      </li>
+      <li class="feat reveal">
+        <span class="feat-no">03</span>
+        <div>
+          <h3>Wallets and utang, in one place</h3>
+          <p>Track cash, e-wallets and bank balances by hand, and keep a clear list of who owes you and who you owe, with due dates and a ready-to-send reminder.</p>
+          <span class="tags"><i>Accounts</i><i>Utang tracker</i><i>Hide numbers</i></span>
+        </div>
+      </li>
+      <li class="feat reveal">
+        <span class="feat-no">04</span>
+        <div>
+          <h3>Savings goals that you can see</h3>
+          <p>Name a goal, set a target and watch it fill. A new laptop, an emergency fund, a trip home. Small ipon adds up faster when you can see it.</p>
+          <span class="tags"><i>Goals</i><i>Progress tracking</i></span>
+        </div>
+      </li>
+      <li class="feat reveal">
+        <span class="feat-no">05</span>
+        <div>
+          <h3>Fin, your coin coach</h3>
+          <p>Fin is a pixel coin with a graduation cap who cheers your wins, nudges you before you overspend and levels up as your habit grows. Keep your streak alive, and use a freeze when life gets busy.</p>
+          <span class="tags"><i>Streaks &amp; freezes</i><i>Levels</i><i>Weekly recap</i></span>
+        </div>
+      </li>
+      <li class="feat reveal">
+        <span class="feat-no">06</span>
+        <div>
+          <h3>Learn, in short lessons</h3>
+          <p>Take a three-minute quiz and unlock lessons built around how you actually spend: budgeting, saving first, smart spending and money safety.</p>
+          <span class="tags"><i>Placement quiz</i><i>Bite-size lessons</i><i>From your own numbers</i></span>
+        </div>
+      </li>
+    </ol>
+
+    <!-- Interactive "receipt": the idea of Finuity in ten seconds -->
+    <div class="math reveal" id="math">
+      <div class="math-intro">
+        <p class="eyebrow">Try the idea</p>
+        <h3>Your “yours to spend” in ten seconds.</h3>
+        <p>This is the question Finuity answers every day. Type in your own numbers; nothing is saved or sent.</p>
+      </div>
+
+      <form class="receipt" id="mathForm" novalidate>
+        <div class="receipt-head"><span>FINUITY</span><span id="mathMonth">THIS MONTH</span></div>
+        <label class="rline">
+          <span>Money coming in</span>
+          <span class="inp"><i>₱</i><input id="mIncome" inputmode="decimal" autocomplete="off" value="5000" aria-label="Money coming in this month in pesos"></span>
+        </label>
+        <label class="rline">
+          <span>Bills to pay</span>
+          <span class="inp"><i>₱</i><input id="mBills" inputmode="decimal" autocomplete="off" value="1300" aria-label="Bills to pay this month in pesos"></span>
+        </label>
+        <label class="rline">
+          <span>Already spent</span>
+          <span class="inp"><i>₱</i><input id="mSpent" inputmode="decimal" autocomplete="off" value="1700" aria-label="Already spent this month in pesos"></span>
+        </label>
+        <div class="receipt-total">
+          <span>Yours to spend</span>
+          <strong id="mTotal" aria-live="polite">₱2,000.00</strong>
+        </div>
+        <p class="receipt-note" id="mNote">That is 40% of your money. Not bad.</p>
+        <div class="receipt-bar" aria-hidden="true"><span id="mBar"></span></div>
+        <a class="btn btn-primary btn-block" href="#contact" data-app-link>Do this with your real numbers</a>
+      </form>
+    </div>
+
+    <!-- Plans -->
+    <div class="plans" id="plans">
+      <div class="plans-head reveal">
+        <p class="eyebrow">Plans</p>
+        <h3>Free to start. VIP when you outgrow it.</h3>
+      </div>
+
+      <div class="plan-grid">
+        <article class="plan reveal">
+          <h4>Free</h4>
+          <p class="plan-price"><b>₱0</b><span>forever</span></p>
+          <ul class="ticks">
+            <li>Up to 6 accounts</li>
+            <li>Track up to ₱150,000 in total balance</li>
+            <li>Bills, budget, goals and utang</li>
+            <li>Fin, streaks, 2 streak freezes</li>
+            <li>Lessons and quiz</li>
+            <li>3 free receipt scans</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#contact" data-app-link>Start free</a>
+        </article>
+
+        <article class="plan plan-vip reveal">
+          <span class="plan-flag">VIP</span>
+          <h4>Finuity VIP</h4>
+
+          <div class="seg" role="radiogroup" aria-label="Choose a VIP length" id="seg">
+            <button type="button" role="radio" aria-checked="false" data-plan="m1">1 month</button>
+            <button type="button" role="radio" aria-checked="false" data-plan="m3">3 months</button>
+            <button type="button" role="radio" aria-checked="true"  data-plan="m12">12 months</button>
+          </div>
+
+          <p class="plan-price"><b id="vipPrice">₱399</b><span id="vipPer">about ₱33 a month</span></p>
+          <p class="plan-save" id="vipSave">Best value. Save ₱189 compared with paying monthly.</p>
+
+          <ul class="ticks">
+            <li>Up to 20 accounts</li>
+            <li>Track up to ₱10,000,000</li>
+            <li>3 streak freezes</li>
+            <li>Smart receipt scan</li>
+            <li>A star on Fin</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#contact" data-app-link>Get VIP in the app</a>
+          <p class="plan-fine">Prepaid, no auto-renew. Pay with GCash or QR Ph.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. CALL TO ACTION ========== -->
+<section class="cta" id="cta" aria-labelledby="cta-title">
+  <div class="wrap cta-grid">
+    <div>
+      <h2 id="cta-title">Log one thing today.<br>See what’s <em>truly yours.</em></h2>
+      <p>It takes less than a minute, it is free, and your streak starts today.</p>
+      <div class="cta-actions">
+        <a class="btn btn-light btn-lg" href="#contact" data-app-link>Try Finuity free</a>
+        <a class="btn btn-line btn-lg" href="#contact">Contact us</a>
+        <a class="btn btn-line btn-lg" href="#about">Learn more</a>
+      </div>
+    </div>
+    <img class="cta-fin" src="assets/fin-happy.svg" alt="" width="220" height="220" loading="lazy">
+  </div>
+</section>
+
+<!-- ========== 5. VIDEO ========== -->
+<section class="section video-sec" id="video" aria-labelledby="video-title">
+  <div class="wrap">
+    <div class="video-head reveal">
+      <p class="eyebrow">Watch</p>
+      <h2 id="video-title">Finuity in 60 seconds.</h2>
+    </div>
+
+    <figure class="player reveal">
+      <video id="promo" controls preload="metadata" playsinline poster="video/poster.jpg" aria-describedby="promo-desc">
+        <source src="video/finuity-promo.mp4" type="video/mp4">
+        <source src="video/finuity-promo.webm" type="video/webm">
+        <track kind="captions" src="video/captions.vtt" srclang="en" label="English">
+        <p>Your browser can’t play this video. <a href="video/finuity-promo.mp4">Download the MP4</a> instead.</p>
+      </video>
+      <figcaption id="promo-desc">One-minute promo: the problem, what Finuity does, and how to try it. Turn on captions with the CC button, or read the transcript below.</figcaption>
+    </figure>
+
+    <details class="transcript reveal">
+      <summary>Read the video transcript</summary>
+      <div id="transcript"></div>
+    </details>
+  </div>
+</section>
+
+<!-- ========== 6 + 7. CONTACT + FORM ========== -->
+<section class="section paper contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow dark">Contact us</p>
+      <h2 id="contact-title">Say hi. We read every message.</h2>
+      <p class="sub">Questions, feedback, a bug, or you want Finuity in your school? Send it our way.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z"/></svg></span>
+          <div><b>Facebook page</b><a id="fbLink" href="https://www.facebook.com/search/top?q=Finuity" target="_blank" rel="noopener">Finuity on Facebook</a><small>Our main channel. Message us anytime.</small></div>
+        </li>
+        <li id="emailRow" hidden>
+          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><b>Email</b><a id="emailLink" href="#"></a><small>For schools, partners and press.</small></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><b>Find us</b><span>PCP-IS Solutions, Institute of Computing<br>Davao del Norte State College<br>New Visayas, Panabo City 8105</span><small>Visit our SUNDAYAG 2026 booth and try the app with us.</small></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><b>Reply time</b><span>Usually within a day or two</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="inquiry" novalidate aria-labelledby="form-title">
+      <h3 id="form-title">Send us a message</h3>
+
+      <div class="field">
+        <label for="fName">Your name <span class="req" aria-hidden="true">*</span></label>
+        <input id="fName" name="name" type="text" autocomplete="name" required maxlength="60" placeholder="Juan Dela Cruz">
+        <p class="err" id="eName" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="fContact">Email or Facebook name <span class="req" aria-hidden="true">*</span></label>
+        <input id="fContact" name="contact" type="text" autocomplete="email" required maxlength="80" placeholder="you@email.com">
+        <p class="err" id="eContact" role="alert"></p>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="fRole">I am a…</label>
+          <select id="fRole" name="role">
+            <option>Student</option>
+            <option>Teacher or parent</option>
+            <option>School or organization</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fTopic">About</label>
+          <select id="fTopic" name="topic">
+            <option>Feedback on the app</option>
+            <option>A question</option>
+            <option>I want to try Finuity</option>
+            <option>VIP plans</option>
+            <option>Partnership</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="fMsg">Your message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="fMsg" name="message" rows="5" required minlength="10" maxlength="500" placeholder="Tell us what you think…"></textarea>
+        <div class="msg-foot"><p class="err" id="eMsg" role="alert"></p><span class="count" id="count">0 / 500</span></div>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-lg" type="submit" id="send">Send message</button>
+      <p class="form-fine">This demo form does not store or send your details anywhere.</p>
+
+      <div class="success" id="success" hidden tabindex="-1">
+        <img src="assets/fin-happy.svg" alt="" width="84" height="84">
+        <h4 id="okTitle">Thank you!</h4>
+        <p id="okText">We got your message.</p>
+        <button type="button" class="btn btn-ghost" id="again">Send another</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-tile"><img src="assets/logo.png" alt="" width="40" height="40"></span>
+        <span class="brand-word">FIN<b>UITY</b></span>
+      </a>
+      <p class="foot-tag">Know what’s truly yours to spend.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#about">About</a><a href="#products">Products</a><a href="#video">Video</a><a href="#contact">Contact</a>
+    </nav>
+    <p class="foot-fine">
+      © <span id="year">2026</span> PCP-IS Solutions · Institute of Computing, Davao del Norte State College.<br>
+      Finuity is a budgeting and learning tool. It is not a bank or an e-wallet and does not hold your money.
+    </p>
+  </div>
+</footer>
+
+<!-- sticky mobile call-to-action -->
+<a class="sticky-cta" id="stickyCta" href="#contact" data-app-link>Try Finuity free</a>
+
+<script src="js/config.js"></script>
+<script src="js/transcript.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
